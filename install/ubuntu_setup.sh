@@ -15,7 +15,8 @@ sudo apt-get install guake terminator
 
 # Zsh terminal
 sudo apt-get install zsh
-chsh -s $(which zsh) # login again after this
+chsh -s $(which zsh) # login again before running the next command
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Python
 sudo apt-get install python python-numpy python-scipy python3-pip
