@@ -8,16 +8,23 @@ sudo apt-get upgrade
 sudo apt-get install ubuntu-restricted-extras
 
 # Basic toolchain
-sudo apt-get install build-essential cmake cmake-curses-gui git
+sudo apt-get install build-essential cmake cmake-curses-gui git gitk
 
 # Terminals
 sudo apt-get install guake terminator
 
+# Zsh terminal
+sudo apt-get install zsh
+chsh -s $(which zsh) # login again after this
+
 # Python
-sudo apt-get install python python-numpy python-scipy
+sudo apt-get install python python-numpy python-scipy python3-pip
+
+# Editors and IDEs
+sudo apt-get install atom qtcreator
 
 # Qt 5
-sudo apt-get install qt5-default qtcreator qml-module-qtquick2 libqt5webkit5-dev libqt5svg5-dev
+sudo apt-get install qt5-default qml-module-qtquick2 libqt5webkit5-dev libqt5svg5-dev
 
 # Java
 sudo apt-get install default-jdk
